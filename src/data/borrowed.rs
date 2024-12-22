@@ -12,7 +12,7 @@ use xplm_sys::*;
 /// A is the access level (`ReadOnly` or `ReadWrite`)
 pub struct DataRef<T: ?Sized, A = ReadOnly> {
     /// The dataref handle
-    id: XPLMDataRef,
+    pub id: XPLMDataRef,
     /// Type phantom data
     type_phantom: PhantomData<T>,
     /// Data access phantom data
